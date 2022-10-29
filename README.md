@@ -2,6 +2,8 @@
 
 Chrome Extension to open Steam URLs in the Steam Client.
 
+If you don't trust it (it DOES say that i can see your browser history..) then just check the code out yourself and use the source code instead of my pre-built crx. Trust me, i won't track you with this.
+
 ## Installation
 Go to the extensions menu on your chromium browser, enable Developer Mode then drag the CRX file from Releases into the page. Now restart the browser (or don't) and enjoy!
 
