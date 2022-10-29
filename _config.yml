@@ -1,8 +1,0 @@
-title: Steam URL Opener
-tagline: Opens Steam URLs in your Steam client.
-remote_theme: "poole/poole"
-baseurl: "https://hdboye.github.io/steam-url-opener/"
-  
-sass:
-  sass_dir: _sass
-  style: :compressed
