@@ -1,0 +1,19 @@
+{
+  "name": "Steam URL Opener",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "description": "Will prompt an \"Open in Steam\" message when you open a steamcommunity.com page.",
+  "homepage_url": "https://hdboye.github.io",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "webNavigation", "tabs"
+  ],
+  "host_permissions": ["https://*.steamcommunity.com/*"]
+}
