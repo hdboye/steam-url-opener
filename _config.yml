@@ -1,3 +1,17 @@
 title: Steam URL Opener
 description: Opens Steam URLs in your Steam client.
 remote_theme: "poole/poole"
+
+plugins:
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+exclude:
+  - .editorconfig
+  - .git
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
