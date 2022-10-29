@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "manifest_version": 3,
   "description": "Will prompt an \"Open in Steam\" message when you open a steamcommunity.com page.",
-  "homepage_url": "https://hdboye.github.io",
+  "homepage_url": "https://github.com/hdboye/steam-url-opener",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
