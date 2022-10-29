@@ -1,6 +1,7 @@
 title: Steam URL Opener
 description: Opens Steam URLs in your Steam client.
 remote_theme: "poole/poole"
+baseurl: "https://hdboye.github.io/steam-url-opener/"
 
 plugins:
   - jekyll-gist
