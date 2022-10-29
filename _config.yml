@@ -6,3 +6,7 @@ plugins:
   - jekyll-gist
   - jekyll-paginate
   - jekyll-seo-tag
+  
+sass:
+  sass_dir: _sass
+  style: :compressed
