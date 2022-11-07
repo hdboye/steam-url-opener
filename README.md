@@ -4,6 +4,8 @@ Chromium extension that opens URLs in the Steam Client.
 
 Currently supports any chromium-based browser, but i'm looking to port to Firefox. FYI you can always inspect source code and build yourself if you don't trust my pre-built crx.
 
+Make an issue if you have a feature request, or hell even code it in yourself and make a PR! If it's good i'll almost always accept it.
+
 ## Installation
 Go to the extensions menu on your chromium browser, enable Developer Mode then drag [the CRX file from Releases](https://github.com/hdboye/steam-url-opener/releases) into the page. Now restart the browser (or don't) and enjoy!
 
