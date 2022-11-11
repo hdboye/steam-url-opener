@@ -20,4 +20,11 @@ function init(){
     document.getElementById('enabled2').addEventListener('change', (event) => {
         chrome.storage.sync.set({enabledt: event.currentTarget.checked},function(){return;});
     })
+
+    chrome.storage.sync.get(['enabledh'],function(res){
+        document.getElementById('enabled3').checked = res.enabledh;
+    });
+    document.getElementById('enabled3').addEventListener('change', (event) => {
+        chrome.storage.sync.set({enabledh: event.currentTarget.checked},function(){return;});
+    })
 };
