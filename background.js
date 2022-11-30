@@ -10,7 +10,7 @@ function redirect(e){
       }
     });
   }
-  if(e.url.startsWith('https://store.steampowered.com')){
+  if(e.url.startsWith('https://store.steampowered.com') && !(e.url.startsWith('https://store.steampowered.com/widget/'))){
     chrome.storage.sync.get(['enabledt'], function(res){
       if(res.enabledt){
         chrome.tabs.update({url:"steam://openurl/"+e.url});
