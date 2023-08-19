@@ -40,4 +40,10 @@ function init(){
     document.getElementById('askfirst').addEventListener('change', (event) => {
         chrome.storage.sync.set({askfirst: event.currentTarget.checked},function(){return;});
     })
+    chrome.storage.sync.get(['anywidget'],function(res){
+        document.getElementById('anywidget').checked = res.anywidget;
+    });
+    document.getElementById('anywidget').addEventListener('change', (event) => {
+        chrome.storage.sync.set({anywidget: event.currentTarget.checked},function(){return;});
+    })
 };

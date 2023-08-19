@@ -1,6 +1,6 @@
 {
   "name": "Steam URL Opener",
-  "version": "1.3.0",
+  "version": "1.4.1",
   "manifest_version": 3,
   "description": "Will prompt an \"Open in Steam\" message when you open a steamcommunity.com page (or, if allowed, will open automatically)",
   "homepage_url": "https://github.com/hdboye/steam-url-opener",
