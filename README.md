@@ -10,11 +10,11 @@ Chromium extension that automatically opens Steam pages in the Steam app.
 - Close the original page once it's redirected
 - Redirect Steam widgets, if enabled
 
-## Installation
+## Installation/Updating
 
 *I'm currently working on getting this into the Opera store! I'll try to get it onto the Chrome web store next.*
 
-There are currently 2 ways to install the extensions, one works for everyone and one works for Linux only. This is because Google hates me, and because you can't use extensions from CRX files if they aren't from the Google Web Store except if you're on Linux.
+There are currently 2 ways to install the extensions, one works for everyone and one works for Linux only. This is because you can't use extensions from CRX files if they aren't from the Google Web Store except if you're on Linux.
 
 Go to the extensions page in your Chromium-based browser. This should be on the 3 lines at the top right corner, or for Opera GX users the Menu button on the top left.
 
@@ -31,7 +31,7 @@ Download [the Source Code (zip) from Releases](https://github.com/hdboye/steam-u
 
 ![1692745495342](https://cdn.discordapp.com/attachments/544247815908360202/1143682103381336204/image.png)
 
-Click on the folder you just got out of unzipping. **Make sure it's the folder with the contents of the extension inside, and NOT the folder that has a folder in it which has the contents.** Once you've clicked that, click Select Folder in your file explorer (or Select or Continue, depends on what OS you use) and the extension should be loaded in! Restart the browser (optional but recommended) and enjoy!
+Click on the folder you just got out of unzipping. **Make sure it's the folder with the contents of the extension inside, and NOT the folder that has a folder in it which has the contents.** Once you've clicked that, click Select Folder in your file explorer (or Select or Continue, depends on what OS you use) and the extension should be loaded in! If you're updating, you can delete the folder with the old version. If the old version is still there after loading the extension in, then you can remove that version. Restart the browser (optional but recommended) and enjoy!
 
 ### Linux Method
 
