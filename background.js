@@ -15,9 +15,10 @@ chrome.runtime.onInstalled.addListener(function(c){
   });
 })
 
-chrome.webNavigation.onCommitted.addListener(function(e){redirect(e)}, {url: [{hostSuffix: 'steamcommunity.com'}]});
-chrome.webNavigation.onCommitted.addListener(function(e){redirect(e)}, {url: [{hostSuffix: 'store.steampowered.com'}]});
-chrome.webNavigation.onCommitted.addListener(function(e){redirect(e)}, {url: [{hostSuffix: 'help.steampowered.com'}]});
+var urls = ['steamcommunity.com', 'store.steampowered.com', 'help.steampowered.com']
+urls.forEach((url) => {
+  chrome.webNavigation.onCommitted.addListener(function(e){redirect(e)}, {url: [{hostSuffix: url}]});
+});
 
 function doDat(e){
   setTimeout(()=>{

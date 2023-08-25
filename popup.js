@@ -5,6 +5,23 @@ chrome.windows.getLastFocused(
         chrome.windows.update(currentWindow.id, { width: 500 });
     }
 );
+async function checkUpdate() {
+    const response = await fetch("https://hdboye.github.io/steam-url-opener/manifest.json");
+    const jeyson = await response.json();
+    var thing = chrome.runtime.getManifest();
+    if(thing.version != jeyson.version){
+        var elemDiv = document.createElement('a');
+        elemDiv.style.cssText = 'color:red;';
+        elemDiv.textContent = 'there is an update available! click here';
+        elemDiv.href = "https://github.com/hdboye/steam-url-opener#installationupdating";
+        elemDiv.target = "_blank"
+        document.body.appendChild(elemDiv);
+    } else {
+        var elemDiv = document.createElement('p');
+        elemDiv.textContent = 'created by hdboye :D | disc: ukvi';
+        document.body.appendChild(elemDiv);
+    }
+  }
 function init(){
     chrome.storage.sync.get(['enabled'],function(res){
         document.getElementById('enabled').checked = res.enabled;
@@ -45,5 +62,7 @@ function init(){
     });
     document.getElementById('anywidget').addEventListener('change', (event) => {
         chrome.storage.sync.set({anywidget: event.currentTarget.checked},function(){return;});
-    })
+    });
+
+    checkUpdate();
 };
