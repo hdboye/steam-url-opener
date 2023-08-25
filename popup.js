@@ -6,10 +6,11 @@ chrome.windows.getLastFocused(
     }
 );
 async function checkUpdate() {
-    const response = await fetch("https://hdboye.github.io/steam-url-opener/manifest.json");
+    const response = await fetch("https://hdboye.github.io/steam-url-opener/manifest.json", { cache: "no-store" });
+    console.log(response);
     const jeyson = await response.json();
     var thing = chrome.runtime.getManifest();
-    if(thing.version != jeyson.version){
+    if(thing.version != jeyson.version && response.ok){
         var elemDiv = document.createElement('a');
         elemDiv.style.cssText = 'color:red;';
         elemDiv.textContent = 'there is an update available! click here';
